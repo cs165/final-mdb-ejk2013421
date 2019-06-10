@@ -15,7 +15,7 @@ async function main() {
   const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
 
   // The "process.env.MONGODB_URI" is needed to work with Heroku.
-  db = await MongoClient.connect(process.env.MONGODB_URI || MONGO_URL);
+  //db = await MongoClient.connect(process.env.MONGODB_URI || MONGO_URL);
 
   // The "process.env.PORT" is needed to work with Heroku.
   const port = process.env.PORT || 3000;
